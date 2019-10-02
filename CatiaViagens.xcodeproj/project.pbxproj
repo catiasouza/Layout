@@ -15,6 +15,8 @@
 		7553F47E2344EFCB007FE7EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7553F47C2344EFCB007FE7EA /* LaunchScreen.storyboard */; };
 		7553F4892344EFCC007FE7EA /* CatiaViagensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553F4882344EFCC007FE7EA /* CatiaViagensTests.swift */; };
 		7553F4942344EFCC007FE7EA /* CatiaViagensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553F4932344EFCC007FE7EA /* CatiaViagensUITests.swift */; };
+		7553F4A2234528C2007FE7EA /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553F4A1234528C2007FE7EA /* Viagem.swift */; };
+		7553F4A423452EDF007FE7EA /* ViagemDAO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553F4A323452EDF007FE7EA /* ViagemDAO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		7553F48F2344EFCC007FE7EA /* CatiaViagensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatiaViagensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7553F4932344EFCC007FE7EA /* CatiaViagensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatiaViagensUITests.swift; sourceTree = "<group>"; };
 		7553F4952344EFCC007FE7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7553F4A1234528C2007FE7EA /* Viagem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
+		7553F4A323452EDF007FE7EA /* ViagemDAO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViagemDAO.swift; path = "../../../../Downloads/Arquivos Projeto/ViagemDAO.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +106,8 @@
 				7553F4712344EFCA007FE7EA /* AppDelegate.swift */,
 				7553F4732344EFCA007FE7EA /* SceneDelegate.swift */,
 				7553F4752344EFCA007FE7EA /* ViewController.swift */,
+				7553F4A1234528C2007FE7EA /* Viagem.swift */,
+				7553F4A323452EDF007FE7EA /* ViagemDAO.swift */,
 				7553F4772344EFCA007FE7EA /* Main.storyboard */,
 				7553F47A2344EFCB007FE7EA /* Assets.xcassets */,
 				7553F47C2344EFCB007FE7EA /* LaunchScreen.storyboard */,
@@ -259,6 +265,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7553F4A2234528C2007FE7EA /* Viagem.swift in Sources */,
+				7553F4A423452EDF007FE7EA /* ViagemDAO.swift in Sources */,
 				7553F4762344EFCA007FE7EA /* ViewController.swift in Sources */,
 				7553F4722344EFCA007FE7EA /* AppDelegate.swift in Sources */,
 				7553F4742344EFCA007FE7EA /* SceneDelegate.swift in Sources */,

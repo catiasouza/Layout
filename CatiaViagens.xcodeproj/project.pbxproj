@@ -1,0 +1,595 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7553F4722344EFCA007FE7EA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553F4712344EFCA007FE7EA /* AppDelegate.swift */; };
+		7553F4742344EFCA007FE7EA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553F4732344EFCA007FE7EA /* SceneDelegate.swift */; };
+		7553F4762344EFCA007FE7EA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553F4752344EFCA007FE7EA /* ViewController.swift */; };
+		7553F4792344EFCA007FE7EA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7553F4772344EFCA007FE7EA /* Main.storyboard */; };
+		7553F47B2344EFCB007FE7EA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7553F47A2344EFCB007FE7EA /* Assets.xcassets */; };
+		7553F47E2344EFCB007FE7EA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7553F47C2344EFCB007FE7EA /* LaunchScreen.storyboard */; };
+		7553F4892344EFCC007FE7EA /* CatiaViagensTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553F4882344EFCC007FE7EA /* CatiaViagensTests.swift */; };
+		7553F4942344EFCC007FE7EA /* CatiaViagensUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7553F4932344EFCC007FE7EA /* CatiaViagensUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7553F4852344EFCC007FE7EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7553F4662344EFCA007FE7EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7553F46D2344EFCA007FE7EA;
+			remoteInfo = CatiaViagens;
+		};
+		7553F4902344EFCC007FE7EA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7553F4662344EFCA007FE7EA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7553F46D2344EFCA007FE7EA;
+			remoteInfo = CatiaViagens;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7553F46E2344EFCA007FE7EA /* CatiaViagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CatiaViagens.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7553F4712344EFCA007FE7EA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7553F4732344EFCA007FE7EA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7553F4752344EFCA007FE7EA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7553F4782344EFCA007FE7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7553F47A2344EFCB007FE7EA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7553F47D2344EFCB007FE7EA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7553F47F2344EFCB007FE7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7553F4842344EFCC007FE7EA /* CatiaViagensTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatiaViagensTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7553F4882344EFCC007FE7EA /* CatiaViagensTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatiaViagensTests.swift; sourceTree = "<group>"; };
+		7553F48A2344EFCC007FE7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7553F48F2344EFCC007FE7EA /* CatiaViagensUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CatiaViagensUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7553F4932344EFCC007FE7EA /* CatiaViagensUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CatiaViagensUITests.swift; sourceTree = "<group>"; };
+		7553F4952344EFCC007FE7EA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7553F46B2344EFCA007FE7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7553F4812344EFCC007FE7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7553F48C2344EFCC007FE7EA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7553F4652344EFCA007FE7EA = {
+			isa = PBXGroup;
+			children = (
+				7553F4702344EFCA007FE7EA /* CatiaViagens */,
+				7553F4872344EFCC007FE7EA /* CatiaViagensTests */,
+				7553F4922344EFCC007FE7EA /* CatiaViagensUITests */,
+				7553F46F2344EFCA007FE7EA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7553F46F2344EFCA007FE7EA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7553F46E2344EFCA007FE7EA /* CatiaViagens.app */,
+				7553F4842344EFCC007FE7EA /* CatiaViagensTests.xctest */,
+				7553F48F2344EFCC007FE7EA /* CatiaViagensUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7553F4702344EFCA007FE7EA /* CatiaViagens */ = {
+			isa = PBXGroup;
+			children = (
+				7553F4712344EFCA007FE7EA /* AppDelegate.swift */,
+				7553F4732344EFCA007FE7EA /* SceneDelegate.swift */,
+				7553F4752344EFCA007FE7EA /* ViewController.swift */,
+				7553F4772344EFCA007FE7EA /* Main.storyboard */,
+				7553F47A2344EFCB007FE7EA /* Assets.xcassets */,
+				7553F47C2344EFCB007FE7EA /* LaunchScreen.storyboard */,
+				7553F47F2344EFCB007FE7EA /* Info.plist */,
+			);
+			path = CatiaViagens;
+			sourceTree = "<group>";
+		};
+		7553F4872344EFCC007FE7EA /* CatiaViagensTests */ = {
+			isa = PBXGroup;
+			children = (
+				7553F4882344EFCC007FE7EA /* CatiaViagensTests.swift */,
+				7553F48A2344EFCC007FE7EA /* Info.plist */,
+			);
+			path = CatiaViagensTests;
+			sourceTree = "<group>";
+		};
+		7553F4922344EFCC007FE7EA /* CatiaViagensUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7553F4932344EFCC007FE7EA /* CatiaViagensUITests.swift */,
+				7553F4952344EFCC007FE7EA /* Info.plist */,
+			);
+			path = CatiaViagensUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7553F46D2344EFCA007FE7EA /* CatiaViagens */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7553F4982344EFCC007FE7EA /* Build configuration list for PBXNativeTarget "CatiaViagens" */;
+			buildPhases = (
+				7553F46A2344EFCA007FE7EA /* Sources */,
+				7553F46B2344EFCA007FE7EA /* Frameworks */,
+				7553F46C2344EFCA007FE7EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CatiaViagens;
+			productName = CatiaViagens;
+			productReference = 7553F46E2344EFCA007FE7EA /* CatiaViagens.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7553F4832344EFCC007FE7EA /* CatiaViagensTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7553F49B2344EFCC007FE7EA /* Build configuration list for PBXNativeTarget "CatiaViagensTests" */;
+			buildPhases = (
+				7553F4802344EFCC007FE7EA /* Sources */,
+				7553F4812344EFCC007FE7EA /* Frameworks */,
+				7553F4822344EFCC007FE7EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7553F4862344EFCC007FE7EA /* PBXTargetDependency */,
+			);
+			name = CatiaViagensTests;
+			productName = CatiaViagensTests;
+			productReference = 7553F4842344EFCC007FE7EA /* CatiaViagensTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7553F48E2344EFCC007FE7EA /* CatiaViagensUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7553F49E2344EFCC007FE7EA /* Build configuration list for PBXNativeTarget "CatiaViagensUITests" */;
+			buildPhases = (
+				7553F48B2344EFCC007FE7EA /* Sources */,
+				7553F48C2344EFCC007FE7EA /* Frameworks */,
+				7553F48D2344EFCC007FE7EA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7553F4912344EFCC007FE7EA /* PBXTargetDependency */,
+			);
+			name = CatiaViagensUITests;
+			productName = CatiaViagensUITests;
+			productReference = 7553F48F2344EFCC007FE7EA /* CatiaViagensUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7553F4662344EFCA007FE7EA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Catia Miranda de Souza";
+				TargetAttributes = {
+					7553F46D2344EFCA007FE7EA = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					7553F4832344EFCC007FE7EA = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 7553F46D2344EFCA007FE7EA;
+					};
+					7553F48E2344EFCC007FE7EA = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 7553F46D2344EFCA007FE7EA;
+					};
+				};
+			};
+			buildConfigurationList = 7553F4692344EFCA007FE7EA /* Build configuration list for PBXProject "CatiaViagens" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7553F4652344EFCA007FE7EA;
+			productRefGroup = 7553F46F2344EFCA007FE7EA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7553F46D2344EFCA007FE7EA /* CatiaViagens */,
+				7553F4832344EFCC007FE7EA /* CatiaViagensTests */,
+				7553F48E2344EFCC007FE7EA /* CatiaViagensUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7553F46C2344EFCA007FE7EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7553F47E2344EFCB007FE7EA /* LaunchScreen.storyboard in Resources */,
+				7553F47B2344EFCB007FE7EA /* Assets.xcassets in Resources */,
+				7553F4792344EFCA007FE7EA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7553F4822344EFCC007FE7EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7553F48D2344EFCC007FE7EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7553F46A2344EFCA007FE7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7553F4762344EFCA007FE7EA /* ViewController.swift in Sources */,
+				7553F4722344EFCA007FE7EA /* AppDelegate.swift in Sources */,
+				7553F4742344EFCA007FE7EA /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7553F4802344EFCC007FE7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7553F4892344EFCC007FE7EA /* CatiaViagensTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7553F48B2344EFCC007FE7EA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7553F4942344EFCC007FE7EA /* CatiaViagensUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7553F4862344EFCC007FE7EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7553F46D2344EFCA007FE7EA /* CatiaViagens */;
+			targetProxy = 7553F4852344EFCC007FE7EA /* PBXContainerItemProxy */;
+		};
+		7553F4912344EFCC007FE7EA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7553F46D2344EFCA007FE7EA /* CatiaViagens */;
+			targetProxy = 7553F4902344EFCC007FE7EA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7553F4772344EFCA007FE7EA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7553F4782344EFCA007FE7EA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7553F47C2344EFCB007FE7EA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7553F47D2344EFCB007FE7EA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7553F4962344EFCC007FE7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7553F4972344EFCC007FE7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7553F4992344EFCC007FE7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AS994HB957;
+				INFOPLIST_FILE = CatiaViagens/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.catiasouza.CatiaViagens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7553F49A2344EFCC007FE7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AS994HB957;
+				INFOPLIST_FILE = CatiaViagens/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.catiasouza.CatiaViagens;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7553F49C2344EFCC007FE7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AS994HB957;
+				INFOPLIST_FILE = CatiaViagensTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.catiasouza.CatiaViagensTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatiaViagens.app/CatiaViagens";
+			};
+			name = Debug;
+		};
+		7553F49D2344EFCC007FE7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AS994HB957;
+				INFOPLIST_FILE = CatiaViagensTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.catiasouza.CatiaViagensTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CatiaViagens.app/CatiaViagens";
+			};
+			name = Release;
+		};
+		7553F49F2344EFCC007FE7EA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AS994HB957;
+				INFOPLIST_FILE = CatiaViagensUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.catiasouza.CatiaViagensUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatiaViagens;
+			};
+			name = Debug;
+		};
+		7553F4A02344EFCC007FE7EA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = AS994HB957;
+				INFOPLIST_FILE = CatiaViagensUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.catiasouza.CatiaViagensUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CatiaViagens;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7553F4692344EFCA007FE7EA /* Build configuration list for PBXProject "CatiaViagens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7553F4962344EFCC007FE7EA /* Debug */,
+				7553F4972344EFCC007FE7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7553F4982344EFCC007FE7EA /* Build configuration list for PBXNativeTarget "CatiaViagens" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7553F4992344EFCC007FE7EA /* Debug */,
+				7553F49A2344EFCC007FE7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7553F49B2344EFCC007FE7EA /* Build configuration list for PBXNativeTarget "CatiaViagensTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7553F49C2344EFCC007FE7EA /* Debug */,
+				7553F49D2344EFCC007FE7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7553F49E2344EFCC007FE7EA /* Build configuration list for PBXNativeTarget "CatiaViagensUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7553F49F2344EFCC007FE7EA /* Debug */,
+				7553F4A02344EFCC007FE7EA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7553F4662344EFCA007FE7EA /* Project object */;
+}

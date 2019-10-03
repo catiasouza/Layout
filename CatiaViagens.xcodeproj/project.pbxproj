@@ -65,6 +65,7 @@
 		7553F4AA234535AE007FE7EA /* img3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img3.jpg; sourceTree = "<group>"; };
 		7553F4AB234535AE007FE7EA /* img2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img2.jpg; sourceTree = "<group>"; };
 		7553F4AC234535AE007FE7EA /* img1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = img1.png; sourceTree = "<group>"; };
+		7553F4B7234627BE007FE7EA /* ViagemDAO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViagemDAO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,10 +118,10 @@
 			children = (
 				7553F4A7234535AE007FE7EA /* Assets */,
 				7553F4712344EFCA007FE7EA /* AppDelegate.swift */,
+				7553F4B2234626E7007FE7EA /* Model */,
+				7553F4B32346272A007FE7EA /* Home */,
+				7553F4B6234627AE007FE7EA /* ViagemDAO */,
 				7553F4732344EFCA007FE7EA /* SceneDelegate.swift */,
-				7553F4752344EFCA007FE7EA /* ViewController.swift */,
-				7553F4A523453174007FE7EA /* TableViewCell.swift */,
-				7553F4A1234528C2007FE7EA /* Viagem.swift */,
 				7553F4A323452EDF007FE7EA /* ViagemDAO.swift */,
 				7553F4772344EFCA007FE7EA /* Main.storyboard */,
 				7553F47A2344EFCB007FE7EA /* Assets.xcassets */,
@@ -159,6 +160,47 @@
 			);
 			name = Assets;
 			path = "../../../../Downloads/Arquivos Projeto/Assets";
+			sourceTree = "<group>";
+		};
+		7553F4B2234626E7007FE7EA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7553F4A1234528C2007FE7EA /* Viagem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7553F4B32346272A007FE7EA /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7553F4B523462796007FE7EA /* View */,
+				7553F4B42346277E007FE7EA /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7553F4B42346277E007FE7EA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7553F4752344EFCA007FE7EA /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		7553F4B523462796007FE7EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7553F4A523453174007FE7EA /* TableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7553F4B6234627AE007FE7EA /* ViagemDAO */ = {
+			isa = PBXGroup;
+			children = (
+				7553F4B7234627BE007FE7EA /* ViagemDAO.swift */,
+			);
+			path = ViagemDAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

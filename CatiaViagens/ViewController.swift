@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDataSource,UITableViewDelegate {
     
     @IBOutlet weak var tabelaViagens: UITableView!
     
@@ -21,6 +21,7 @@ class ViewController: UIViewController,UITableViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tabelaViagens.dataSource = self
+        self.tabelaViagens.delegate = self
         self.viewPacotes.layer.cornerRadius = 10
         self.viewsHoteis.layer.cornerRadius = 10            //configurando botao pacotes q ja esta conectado
     }
@@ -31,12 +32,20 @@ class ViewController: UIViewController,UITableViewDataSource {
     }
     // mostra o conteudo q a celula tem q mostrar"que no caso e o "cell" q e o identifiquer da celula
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! TableViewCell
         
         let viagemAtual = listaViagens[indexPath.row]
-        cell.textLabel?.text = viagemAtual.titulo
+        
+        cell.labelTitulo.text = viagemAtual.titulo
+        cell.labelQuantidadeDeDias.text = "\(viagemAtual.quantidadeDeDias) dias"
+        cell.labelPreco.text = viagemAtual.preco
+        cell.imagemViagem.image = UIImage(named: viagemAtual.caminhoDaImagem)
         
         return cell
+    }
+    //metodo para definir a altura da celula
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 150
     }
 }
 

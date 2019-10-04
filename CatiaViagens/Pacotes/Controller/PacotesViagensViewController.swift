@@ -4,7 +4,7 @@ import UIKit
 
 //IMPLEMENTA O UIColletionView pq estamos usando ela no layout, obrigatoriamente vc implementa 2 metodos
 
-class PacotesViagensViewController: UIViewController,UICollectionViewDataSource{
+class PacotesViagensViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
 
     @IBOutlet weak var colecaoPacotesViagens: UICollectionView!
     
@@ -13,7 +13,7 @@ class PacotesViagensViewController: UIViewController,UICollectionViewDataSource{
     override func viewDidLoad() {
         super.viewDidLoad()
         colecaoPacotesViagens.dataSource = self
-        
+        colecaoPacotesViagens.delegate = self
 
        
     }
@@ -42,5 +42,11 @@ class PacotesViagensViewController: UIViewController,UICollectionViewDataSource{
         celulaPacote.layer.cornerRadius = 5
         
         return celulaPacote
+    }
+    
+    func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAt indexPath: IndexPath) -> CGSize {
+        print("TTTTTTTTTTTT)")
+        let larguraCelula = collectionView.bounds.width / 2
+        return CGSize(width: larguraCelula - 10, height: 160)
     }
 }

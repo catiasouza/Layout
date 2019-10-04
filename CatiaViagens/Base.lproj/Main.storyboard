@@ -171,10 +171,10 @@
             </objects>
             <point key="canvasLocation" x="103" y="-429"/>
         </scene>
-        <!--View Controller-->
+        <!--Pacotes Viagens View Controller-->
         <scene sceneID="Xnt-ZM-AnW">
             <objects>
-                <viewController id="goU-Pw-BCH" sceneMemberID="viewController">
+                <viewController id="goU-Pw-BCH" customClass="PacotesViagensViewController" customModule="CatiaViagens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bJ7-cS-45X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -212,7 +212,7 @@
                                             <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                         </collectionViewFlowLayout>
                                         <cells>
-                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="PfL-Oc-zWx">
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="celulaPacote" id="PfL-Oc-zWx" customClass="PacoteViagensCollectionViewCell" customModule="CatiaViagens" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="b5u-DP-Cbo">
@@ -234,6 +234,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ryj-h1-6OZ"/>
                     </view>
+                    <connections>
+                        <outlet property="colecaoPacotesViagens" destination="x12-Rr-wOq" id="LCT-9t-Mz9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7j-1s-y7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

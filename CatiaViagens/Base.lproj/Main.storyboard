@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="goU-Pw-BCH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="NpQ-wx-O7c">
     <device id="retina4_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
@@ -7,7 +7,25 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Tab Bar Controller-->
+        <scene sceneID="I5a-tb-vNg">
+            <objects>
+                <tabBarController id="NpQ-wx-O7c" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="mYV-FM-met">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="SCR-fb-CO1"/>
+                        <segue destination="goU-Pw-BCH" kind="relationship" relationship="viewControllers" id="udq-aZ-med"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Gva-Ft-jlr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-743" y="-545"/>
+        </scene>
+        <!--Procurar-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CatiaViagens" customModuleProvider="target" sceneMemberID="viewController">
@@ -92,7 +110,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="unB-uD-Hh9">
-                                <rect key="frame" x="0.0" y="208" width="320" height="360"/>
+                                <rect key="frame" x="0.0" y="208" width="320" height="311"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" rowHeight="150" id="CA9-2r-ozE" customClass="TableViewCell" customModule="CatiaViagens" customModuleProvider="target">
@@ -160,6 +178,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Procurar" id="XdI-HL-eu9"/>
                     <connections>
                         <outlet property="tabelaViagens" destination="unB-uD-Hh9" id="cbo-zZ-Xsg"/>
                         <outlet property="viewPacotes" destination="wxz-Hl-z5v" id="CVH-EE-Ykn"/>
@@ -168,9 +187,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="103" y="-429"/>
+            <point key="canvasLocation" x="-39" y="-545"/>
         </scene>
-        <!--Pacotes Viagens View Controller-->
+        <!--Pacotes-->
         <scene sceneID="Xnt-ZM-AnW">
             <objects>
                 <viewController id="goU-Pw-BCH" customClass="PacotesViagensViewController" customModule="CatiaViagens" customModuleProvider="target" sceneMemberID="viewController">
@@ -179,7 +198,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleAspectFit" axis="vertical" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="DIx-iv-mmt">
-                                <rect key="frame" x="15" y="10" width="280" height="558"/>
+                                <rect key="frame" x="15" y="10" width="280" height="509"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pacotes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hsk-2H-dEE">
                                         <rect key="frame" x="0.0" y="0.0" width="280" height="30"/>
@@ -205,7 +224,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="x12-Rr-wOq">
-                                        <rect key="frame" x="0.0" y="101.5" width="280" height="456.5"/>
+                                        <rect key="frame" x="0.0" y="101.5" width="280" height="407.5"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="8kC-rn-QZl">
                                             <size key="itemSize" width="70" height="160"/>
@@ -241,9 +260,8 @@
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jdA-S9-QrS">
-                                                            <rect key="frame" x="0.0" y="0.0" width="135" height="100"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="155" height="100"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="135" id="7nO-dF-vp7"/>
                                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="155" id="gTu-ei-vAW"/>
                                                                 <constraint firstAttribute="width" relation="lessThanOrEqual" constant="155" id="ies-cg-B6p"/>
                                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="100" id="nUr-Iv-ahW"/>
@@ -255,6 +273,8 @@
                                                     </subviews>
                                                 </view>
                                                 <constraints>
+                                                    <constraint firstItem="jdA-S9-QrS" firstAttribute="leading" secondItem="PfL-Oc-zWx" secondAttribute="leading" id="05x-xE-amz"/>
+                                                    <constraint firstAttribute="trailing" secondItem="jdA-S9-QrS" secondAttribute="trailing" id="3Q6-8m-aju"/>
                                                     <constraint firstItem="NAT-e7-sqC" firstAttribute="top" secondItem="jdA-S9-QrS" secondAttribute="bottom" constant="27" id="8v8-S1-OaD"/>
                                                     <constraint firstItem="14E-I2-EIH" firstAttribute="top" secondItem="jdA-S9-QrS" secondAttribute="bottom" constant="14" id="c5i-iv-Cea"/>
                                                     <constraint firstItem="jdA-S9-QrS" firstAttribute="leading" secondItem="PfL-Oc-zWx" secondAttribute="leadingMargin" constant="-1" id="h0g-Th-Ojb"/>
@@ -283,13 +303,14 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ryj-h1-6OZ"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Pacotes" id="gx7-Zd-UlP"/>
                     <connections>
                         <outlet property="colecaoPacotesViagens" destination="x12-Rr-wOq" id="LCT-9t-Mz9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="H7j-1s-y7Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="961.875" y="-405.63380281690144"/>
+            <point key="canvasLocation" x="677" y="-545"/>
         </scene>
     </scenes>
 </document>

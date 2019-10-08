@@ -4,9 +4,11 @@ import UIKit
 
 //IMPLEMENTA O UIColletionView pq estamos usando ela no layout, obrigatoriamente vc implementa 2 metodos
 
-class PacotesViagensViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
+class PacotesViagensViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate{
 
     @IBOutlet weak var colecaoPacotesViagens: UICollectionView!
+    
+    @IBOutlet weak var pesquisarViagens: UISearchBar!
     
     let listaViagens:Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
     
@@ -14,6 +16,7 @@ class PacotesViagensViewController: UIViewController,UICollectionViewDataSource,
         super.viewDidLoad()
         colecaoPacotesViagens.dataSource = self
         colecaoPacotesViagens.delegate = self
+        pesquisarViagens.delegate = self          //IMPLEMENTANDO O SEARCH
 
        
     }
@@ -45,8 +48,13 @@ class PacotesViagensViewController: UIViewController,UICollectionViewDataSource,
     }
     
     func collectionView(_ collectionView: UICollectionView,layout collectionViewLayout: UICollectionViewLayout,sizeForItemAt indexPath: IndexPath) -> CGSize {
-        print("TTTTTTTTTTTT)")
+       
         let larguraCelula = collectionView.bounds.width / 2
         return CGSize(width: larguraCelula - 10, height: 160)
+    }
+    //CAPTURAR O TEXTO Q USUARIO DIGITOU
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        print(searchText)
+        
     }
 }

@@ -305,6 +305,7 @@
                     <tabBarItem key="tabBarItem" title="Pacotes" id="gx7-Zd-UlP"/>
                     <connections>
                         <outlet property="colecaoPacotesViagens" destination="x12-Rr-wOq" id="LCT-9t-Mz9"/>
+                        <outlet property="labelContadorPacotes" destination="Wz8-oZ-Sct" id="SJ3-HV-dCv"/>
                         <outlet property="pesquisarViagens" destination="a4n-FZ-HxQ" id="sZf-zV-R1f"/>
                     </connections>
                 </viewController>

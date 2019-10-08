@@ -10,13 +10,18 @@ class PacotesViagensViewController: UIViewController,UICollectionViewDataSource,
     
     @IBOutlet weak var pesquisarViagens: UISearchBar!
     
-    let listaViagens:Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
+    @IBOutlet weak var labelContadorPacotes: UILabel!
+    
+    let listaComTodasViagens:Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
+    var listaViagens:Array<Viagem> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        listaViagens = listaComTodasViagens
         colecaoPacotesViagens.dataSource = self
         colecaoPacotesViagens.delegate = self
         pesquisarViagens.delegate = self          //IMPLEMENTANDO O SEARCH
+        self.labelContadorPacotes.text = self.atualizaContadorLabel()
 
        
     }
@@ -54,7 +59,24 @@ class PacotesViagensViewController: UIViewController,UICollectionViewDataSource,
     }
     //CAPTURAR O TEXTO Q USUARIO DIGITOU
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        print(searchText)
+        
+        listaViagens = listaComTodasViagens
+        
+        if searchText != ""{
+             // FILTRANDO PELO ATRIBUTO DA CLASSE VIAGEM
+                   let filtroListaViagem = NSPredicate(format: "titulo contains %@", searchText)
+                   
+                   //GUARDANDO INFORMACOES FILTRADAS Q USUARIO DIGITOU DENTRO DE OUTRO ARRAY
+                   let listaFiltrada:Array<Viagem> = (listaViagens as NSArray).filtered(using: filtroListaViagem) as! Array
+                   //SUBSTITUINDO AS LISTAS
+                   listaViagens = listaFiltrada
+        }
+        self.labelContadorPacotes.text = self.atualizaContadorLabel()
+            colecaoPacotesViagens.reloadData()
         
     }
+    func atualizaContadorLabel() -> String{
+        return listaViagens.count == 1 ? "1 pacote encontrado" : "\(listaViagens.count) pacotes encontrados"
+    }
+    
 }

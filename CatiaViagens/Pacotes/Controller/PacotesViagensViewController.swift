@@ -13,8 +13,8 @@ class PacotesViagensViewController: UIViewController,UICollectionViewDataSource,
     
     @IBOutlet weak var labelContadorPacotes: UILabel!
     
-    let listaComTodasViagens:Array<Viagem> = ViagemDAO().retornaTodasAsViagens()
-    var listaViagens:Array<Viagem> = []
+    let listaComTodasViagens:Array<PacoteViagem> = PacoteViagemDAO().retornaTodasAsViagens()
+    var listaViagens:Array<PacoteViagem> = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,12 +38,12 @@ class PacotesViagensViewController: UIViewController,UICollectionViewDataSource,
         let celulaPacote = collectionView.dequeueReusableCell(withReuseIdentifier: "celulaPacote", for: indexPath)
         as! PacoteViagensCollectionViewCell
         
-        let viagemAtual = listaViagens[indexPath.item]
+        let pacoteAtual = listaViagens[indexPath.item]
         
-        celulaPacote.labelTitulo.text = viagemAtual.titulo
-        celulaPacote.labelQuantidadeDias.text = "\(viagemAtual.quantidadeDeDias) dias"
-        celulaPacote.labelPreco.text = viagemAtual.preco
-        celulaPacote.imagemViagem.image = UIImage(named: viagemAtual.caminhoDaImagem)
+        celulaPacote.labelTitulo.text = pacoteAtual.viagem.titulo
+        celulaPacote.labelQuantidadeDias.text = "\(pacoteAtual.viagem.quantidadeDeDias) dias"
+        celulaPacote.labelPreco.text = pacoteAtual.viagem.preco
+        celulaPacote.imagemViagem.image = UIImage(named: pacoteAtual.viagem.caminhoDaImagem)
     
         
         celulaPacote.layer.borderWidth = 0.5
@@ -78,7 +78,7 @@ class PacotesViagensViewController: UIViewController,UICollectionViewDataSource,
                    let filtroListaViagem = NSPredicate(format: "titulo contains %@", searchText)
                    
                    //GUARDANDO INFORMACOES FILTRADAS Q USUARIO DIGITOU DENTRO DE OUTRO ARRAY
-                   let listaFiltrada:Array<Viagem> = (listaViagens as NSArray).filtered(using: filtroListaViagem) as! Array
+                   let listaFiltrada:Array<PacoteViagem> = (listaViagens as NSArray).filtered(using: filtroListaViagem) as! Array
                    //SUBSTITUINDO AS LISTAS
                    listaViagens = listaFiltrada
         }

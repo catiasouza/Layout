@@ -4,8 +4,9 @@ import UIKit
 
 //IMPLEMENTA O UIColletionView pq estamos usando ela no layout, obrigatoriamente vc implementa 2 metodos
 
-class PacotesViagensViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UISearchBarDelegate{
-
+class PacotesViagensViewController: UIViewController,UICollectionViewDataSource, UICollectionViewDelegateFlowLayout, UICollectionViewDelegate, UISearchBarDelegate{
+    
+    //O PROTOCOLO UICollectionViewDelegate E PARA IMPLEMENTARMOS NOSSA 3 TELA
     @IBOutlet weak var colecaoPacotesViagens: UICollectionView!
     
     @IBOutlet weak var pesquisarViagens: UISearchBar!
@@ -56,6 +57,10 @@ class PacotesViagensViewController: UIViewController,UICollectionViewDataSource,
        
         let larguraCelula = collectionView.bounds.width / 2
         return CGSize(width: larguraCelula - 10, height: 160)
+    }
+    // 3 TELA
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        print("CLICOU EM UMA VIAGEM")
     }
     //CAPTURAR O TEXTO Q USUARIO DIGITOU
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {

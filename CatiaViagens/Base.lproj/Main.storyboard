@@ -313,10 +313,10 @@
             </objects>
             <point key="canvasLocation" x="677" y="-545"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalhes Viangens View Controller-->
         <scene sceneID="92a-IX-cxt">
             <objects>
-                <viewController id="Wnq-nS-xLy" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="detalhes" id="Wnq-nS-xLy" customClass="DetalhesViangensViewController" customModule="CatiaViagens" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="caI-ZW-ggk">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

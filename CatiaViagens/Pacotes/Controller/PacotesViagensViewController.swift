@@ -60,7 +60,13 @@ class PacotesViagensViewController: UIViewController,UICollectionViewDataSource,
     }
     // 3 TELA
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        print("CLICOU EM UMA VIAGEM")
+        //print("CLICOU EM UMA VIAGEM")
+        //LIGAR NA TERCEIRA TELA
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        //INSTANCIAR NOSSA VIEW CONTROLLER E PASSAR UM IDENTIFICADOR P ELA
+        let controller = storyboard.instantiateViewController(withIdentifier: "detalhes") as! DetalhesViangensViewController
+        self.present(controller, animated: true, completion: nil)
+        
     }
     //CAPTURAR O TEXTO Q USUARIO DIGITOU
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
